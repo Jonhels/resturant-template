@@ -3,7 +3,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-color: #494f52;
+    background: linear-gradient(90deg, rgba(129,2,160,1) 0%, rgba(114,22,166,1) 45%, rgba(96,48,174,1) 100%);
     color: white;
 }
 
@@ -16,4 +16,12 @@ nav {
 .nav-links li {
     color: white;
     margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+nav img {
+    height: 75px;
 }
