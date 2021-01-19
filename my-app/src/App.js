@@ -1,29 +1,15 @@
 import react from 'react';
 import './App.css';
-import Nav from './Nav';
-import About from './About';
-import Menu from './Menu';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Picture from './Library/Image/Picture.jpg';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/menu" exact component={Menu} />
-          <Route path="/about" component={About} />
-        </Switch>
-      </div>
-    </Router>
+<div className="wrapper">
+  <img src={Picture} alt="Picture of Jon"/>
+  <h1>Jon Helge Skjærstein</h1>
+  <div className="container"></div>
+</div>
   );
 }
-
-const Home = () => (
-  <div>
-    <h1>Home</h1>
-  </div>
-);
 
 export default App;
